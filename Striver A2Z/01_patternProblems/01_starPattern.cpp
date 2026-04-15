@@ -113,3 +113,55 @@ int main(){
 }
 
 */
+
+/*
+5.
+    *  *  *  *  * 
+    *  *  *  * 
+    *  *  * 
+    *  * 
+    * 
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int count = 5;
+    for (int i = 0; i < count; i++)
+    {
+       for (int j = i+1; j < count; j++)
+       {
+            cout << " * " ;
+       }
+       cout << endl;
+    }
+    
+}
+
+*/
+
+/*
+5.
+        12345
+        1234
+        123
+        12
+        1
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int count = 5;
+    for (int i = 0; i <= count; i++)
+    {
+       for (int j = 1 ; j <= count-i; j++) //count - i, i=0 then count - i becomes 5-0=5 means print cols 5 times, then in next loop 5-1=4, then 5-2=3 and so on...
+       {
+            cout << j ;
+       }
+       cout << endl;
+    }
+    
+}
+
+*/
