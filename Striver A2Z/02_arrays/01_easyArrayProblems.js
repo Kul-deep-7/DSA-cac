@@ -1,17 +1,16 @@
 /* 
-find largest element in array
+//find largest element in array
 
 
 function largestElement(array){
-    let maxValue = 0 //assume 0 is the value of maxValue for now
-    for(let i=0; i<array.length; i++){ //loop through the array and check the condition
+    let maxValue = array[0] //assume 0 index is the value of maxValue for now (which is 1)
+    for(let i=1; i<array.length; i++){ //loop through the array from 1 index cuz 0 index is in maxValue and check the condition
         if(array[i]> maxValue){ //if array[i] is bigger than maxValue change the maxValue to array[i]
-            maxValue = array[i] //array[i] is 1 > maxValue is 0, so now maxValue is 1 , then it will check the next is 3 > 1? true maxValue is 3 now, 9>3? true, 2>9? false maxValue stays 9
+            maxValue = array[i] //array[i] is 3 > maxValue is 1, true maxValue is 3 now, -9>3? false, 2>3? false maxValue stays 3 for now and move further
         }
     }
     return maxValue
 }
 
-console.log(largestElement([1,3,9,2,7,8,3]))
-
-*/
+console.log(largestElement([1,3,-9,2,7,8,3]))
+ */
