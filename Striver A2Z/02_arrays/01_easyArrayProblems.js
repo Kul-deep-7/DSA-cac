@@ -46,4 +46,32 @@ console.log(secondLargest([-5, -3, -1]))
 console.log(secondLargest([10, -3, -1]))   
 console.log(secondLargest([1, 2]))
 
+
+// Example array = [3,4,7,5]
+
+        // iteration 2 → arr[i] = 4
+        // 4 > 3 → true
+        // if block runs
+        // secondLargest = 3
+        // largest = 4
+
+        // iteration 3 → arr[i] = 7
+        // 7 > 4 → true
+        // if block runs
+        // secondLargest = 4
+        // largest = 7
+
+        // iteration 4 → arr[i] = 5
+        // 5 > 7 → false → if block skipped
+
+        // else if condition:
+        // arr[i] !== largest → 5 !== 7 → true
+        // secondLargest === null → 4 === null → false
+        // arr[i] > secondLargest → 5 > 4 → true
+
+        // (false OR true) → true
+        // true AND true → true
+
+        // so else if runs
+        // secondLargest = 5
 */
