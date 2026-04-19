@@ -75,3 +75,52 @@ console.log(secondLargest([1, 2]))
         // so else if runs
         // secondLargest = 5
 */
+
+/*
+        //check array is sorted or not
+
+        function array(arr){
+            let num = arr[0]
+            for(let i = 1; i<=arr.length; i++){
+                if(num > arr[i]){
+                    return "array is not sorted"
+                    
+            }else{
+                   num = arr[i]
+                }
+            }return "array is sorted"    
+        }
+
+        console.log(array([2,3,4,5]))
+        console.log(array([2,3,4,5,1]))
+        console.log(array ([-2, -3, 0]))
+        console.log(array([2,2,2,2]))
+
+*/
+
+/*
+        //Remove duplicates from sorted array
+
+
+function array(arr) {
+   
+    let num = arr[0]
+    let nonduplicates = 0
+    for(let i=1; i<arr.length; i++){
+        if(num === arr[i]){
+            num = arr[i]
+        }else{
+            nonduplicates = nonduplicates + 1
+            num=arr[i]
+        }
+    }
+    return nonduplicates
+}
+
+console.log (array([1,2,3,4,5,6]))
+console.log(array([2,2,2,2]))
+console.log(array([2,3,3,4,4,5,5]))
+
+                    !!!!!!!    did the above code myself but wrong expected output (should have read the question properly     !!!!!!!
+
+*/
