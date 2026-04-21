@@ -121,6 +121,43 @@ console.log (array([1,2,3,4,5,6]))
 console.log(array([2,2,2,2]))
 console.log(array([2,3,3,4,4,5,5]))
 
-                    !!!!!!!    did the above code myself but wrong expected output (should have read the question properly     !!!!!!!
+                    !!!!!!!    did the above code myself but wrong expected output (should have read the question properly)     !!!!!!!
+
+
+//find duplicates in sorted array
+//Two pointers
+
+function findDups(arr){
+
+    let i = 0; 
+    // i is pointer for unique elements
+    // i represents index, not value
+    // arr[i] gives value at index i
+
+    for(let j = 1; j < arr.length; j++){
+        // j is traversal pointer
+        // j scans the array from left to right
+
+        if(arr[i] !== arr[j]){
+            // if current unique value != new value
+            // means we found a new unique element
+
+            i++ //i here is index
+            // move unique pointer forward
+            // now i points to next position for new unique value
+            // i now moves from 0 to 1
+
+            arr[i] = arr[j] 
+            //now i is on 1st index and j is on 2nd index means change the value of i index to the value of j index
+            //now the array become from [2,2,3] to [2,3,_ ]
+            // place the new unique value at position i
+        }
+    }
+
+    return i + 1
+    // i is index, so total unique elements = i + 1
+}
+
+console.log(findDups([2,2,3]))
 
 */
