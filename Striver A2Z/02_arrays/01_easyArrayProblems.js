@@ -161,3 +161,33 @@ function findDups(arr){
 console.log(findDups([2,2,3]))
 
 */
+
+/* 
+                //Left Rotate Array by One
+
+function ShiftToLast(arr){
+    // store first element because it will be overwritten during shifting
+    let first = arr[0];
+
+    // loop till second last element
+    // we stop at arr.length - 1 because we use arr[i+1]
+    // if we go till arr.length, arr[i+1] becomes undefined
+    for(let i = 0; i<arr.length-1; i++){
+
+    // shift element to left
+    // arr[0] = arr[1]
+    // arr[1] = arr[2]
+    // arr[2] = arr[3]
+    // arr[3] = arr[4]
+        arr[i] = arr[i+1]
+    }
+    // now last position is empty (or duplicate)
+    // place first element at last
+    arr[arr.length-1] = first;
+
+    return arr
+}
+
+console.log(ShiftToLast([1,4,7,8,2]))
+
+*/
